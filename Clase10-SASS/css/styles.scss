@@ -1,0 +1,107 @@
+@import '_reset.scss';
+
+body{
+	margin-left: 2em;
+}
+h2{
+	font-size: 2em;
+	font-weight: 800;
+}
+h2,p{
+	margin-bottom: 0.7em;
+}
+$fuente: 0.8em;
+$radius: 5px;
+
+//Extend
+%btn{
+	font-weight: 500;
+	border: 1px solid #cccccc;
+	border-radius: $radius;
+	padding: 0.7em 1em;
+	font-family: sans-serif;
+	font-size: $fuente;
+	background: none;
+}
+
+.btn{
+	@extend %btn;
+}
+
+.btn-default{
+	@extend %btn;
+	color: darken(grey,15);
+	background-color: #fff;
+	&:hover{background-color: darken(#fff, 10);}
+
+}
+
+.btn-primary{
+	@extend %btn;
+	border-color: darken(#337ab7, 10);
+	color: white;
+	background-color: #337ab7;
+	&:hover{background-color: darken(#337ab7, 10);}
+}
+
+.btn-success{
+	@extend %btn;
+	border-color: darken(#5cb85c, 10);
+	color: white;
+	background-color: #5cb85c;
+	&:hover{background-color: darken(#5cb85c, 10);}
+}
+
+.btn-info{
+	@extend %btn;
+	border-color: darken(#5bc0de, 10);
+	color: white;
+	background-color: #5bc0de;
+	&:hover{background-color: darken(#5bc0de, 10);}
+}
+
+.btn-warning{
+	@extend %btn;
+	border-color: darken(#f0ad4e, 10);
+	color: white;
+	background-color: #f0ad4e;
+	&:hover{background-color: darken(#f0ad4e, 10);}
+}
+
+.btn-danger{
+	@extend %btn;
+	border-color: darken(#d9534f, 10);
+	color: white;
+	background-color: #d9534f;
+	&:hover{background-color: darken(#d9534f, 10);}
+}
+
+.btn-link{
+	@extend %btn;
+	border: none;
+	color: grey;
+	&:hover{text-decoration: underline;}
+}
+
+.btn-lg{
+	@extend %btn;
+	font-size: $fuente+0.5;
+	padding-top: 0.6em;
+	padding-bottom: 0.6em;
+}
+
+.btn-sm{
+	@extend %btn;
+	border-radius: &radius+(-1);
+	font-size: $fuente+(-0.06);
+	padding-top: 0.6em;
+	padding-bottom: 0.6em;
+}
+
+.btn-xs{
+	@extend %btn;
+	border-radius: &radius+(-3);
+	font-size: $fuente+(-0.09);
+	padding-top: 0.6em;
+	padding-bottom: 0.6em;
+}
