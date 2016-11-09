@@ -1,0 +1,121 @@
+body {
+  position: relative;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+i:hover{
+	transition-property: color;
+	transition-duration: 0.5s;
+	color:#e5b81c;
+}
+
+
+footer{
+	line-height: 40px;
+}
+
+.jumbotron{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(../img/home.jpg);
+	color:#fff;
+	height: 700px;
+}
+
+.btn-warning{
+	background-color: #fed136;
+}
+
+.form-control{
+	height: 54px;
+}
+
+.lead{
+	color:grey;
+	font-style: italic;
+	margin-top: -10px;
+}
+
+.bg-grey{
+	background-color: #eeeeee;
+}
+
+.bg-black{
+	background-color: #000;
+}
+
+.thumbnail img:hover{
+	transition-property: opacity;
+	transition-duration: 0.5s;
+	opacity: 0.5;
+}
+
+.grey{
+	color: grey;
+}
+
+.white{
+	color: #fff;
+}
+
+.orange{
+	color: #fed136
+}
+
+.margin-top{
+	margin-top: 50px;
+}
+
+.margin-buttom{
+	margin-bottom: 50px;
+}
+
+.padding-left{
+	padding-left: 70px;
+}
+
+.padding-right{
+	padding-right: 70px;
+}
+
+.img-circle{
+	border: 7px solid #eee;
+}
+
+.img-circle-team{
+	border: 7px solid #fff;
+	margin: 0 auto;
+}
+
+.black{
+	color: #000;
+}
+
+.social-padding-right{
+	padding-right: 10px;
+}
+
+.greyscale{
+	filter: grayscale(100%);
+}
+
+.bold{
+	font-weight: bold;
+}
+
+#partners img:hover{
+	transition-property: filter;
+	transition-duration: 0.5s;
+	filter: grayscale(0%);
+}
+
+
+@media screen and (max-width: 767px){
+	.margin-buttom-sm{
+	margin-bottom: 20px;
+	}
+}
